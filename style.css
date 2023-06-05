@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.font-1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.color-1 {
+    background-color: #454A4D;
+}
+
+.color-gradient-1 {
+    color: linear-gradient(to right, #120D5C, #2B1EDC, #261BC2);
+}
+  
+
+/* estilos de texto */
+.text-1{
+    padding: 0;
+    margin: 0;
+    color: aqua;
+    font-size: 12vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-2 {
+    padding: 0;
+    margin: 0;
+    color: aqua;
+    font-size: 4vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-3 {
+    padding: 0;
+    margin: 0;
+    color: aqua;
+    font-size: 6vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content-text {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 3vh;
+}
+
+.text-justify {
+    text-align: justify;
+    margin: 0 auto;
+}
+
+
+
+/* estilos de texto */
+
+/* Imagens */
+
+.icon {
+    max-width: 100%;
+    width: 50px;
+    margin: 10px;
+}
+
+.myimage {
+    max-width: 100%;
+    width: 300px;
+}
+
+/* Imagens */
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.pt-1{
+    padding-top: 150px;
+}
+
+.pt-2 {
+    padding-top: 100px;
+}
+
+.pt-3 {
+    padding-top: 50px;
+}
+
+.ps-1 {
+    padding-left: 10px;
+}
+
+.ps-2 {
+    padding-left: 20px;
+}
+
+
+.col-1 {
+    width: 50%;
+}
