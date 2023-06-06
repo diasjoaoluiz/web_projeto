@@ -12,11 +12,40 @@ body {
 }
 
 .color-1 {
-    background-color: #454A4D;
+    background-color: #333333;
 }
 
+.color-2 {
+    background-color: #051b32;
+}
+
+.color-3 {
+    background-color: #002a4c;
+}
+
+.color-4 {
+    background-color: #003b67;
+}
+
+.color-5 {
+    background-color: #004d8b;
+}
+
+.color-6 {
+    background-color: #015fa9;
+}
+
+
 .color-gradient-1 {
-    color: linear-gradient(to right, #120D5C, #2B1EDC, #261BC2);
+    background-image: linear-gradient(to right, #051b32, #002a4c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-gradient-2 {
+    background-image: linear-gradient(to right, #004d8b, #015fa9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
   
 
@@ -24,7 +53,6 @@ body {
 .text-1{
     padding: 0;
     margin: 0;
-    color: aqua;
     font-size: 12vh;
     text-transform: uppercase;
     font-weight: bold;
@@ -33,7 +61,6 @@ body {
 .text-2 {
     padding: 0;
     margin: 0;
-    color: aqua;
     font-size: 4vh;
     text-transform: uppercase;
     font-weight: bold;
@@ -42,8 +69,23 @@ body {
 .text-3 {
     padding: 0;
     margin: 0;
-    color: aqua;
     font-size: 6vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-4 {
+    padding: 0;
+    margin: 0;
+    font-size: 10vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-5 {
+    padding: 0;
+    margin: 0;
+    font-size: 8vh;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -51,6 +93,13 @@ body {
 .content-text {
     padding: 0;
     margin: 0;
+    color: white;
+    font-size: 3.5vh;
+}
+
+.text-date {
+    padding: 0;
+    margin-top: 10px;
     color: white;
     font-size: 3vh;
 }
@@ -60,7 +109,9 @@ body {
     margin: 0 auto;
 }
 
-
+.line-height {
+    line-height: 0.8;
+}
 
 /* estilos de texto */
 
@@ -72,10 +123,34 @@ body {
     margin: 10px;
 }
 
-.myimage {
+.myImage {
     max-width: 100%;
     width: 300px;
+    border-radius: 20px;
 }
+
+#scrollImage {
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+  
+.sdownArrow {
+    max-width: 100%;
+    width: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.downArrow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
 
 /* Imagens */
 
@@ -84,16 +159,70 @@ body {
     justify-content: center;
 }
 
+.containerAbout {
+    display: flex;
+    justify-content: center;
+}
+
+.containerExperience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 20px;
+    background-color: #333333;
+    box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
 .pt-1{
+    padding-top: 200px;
+}
+
+.pt-2{
     padding-top: 150px;
 }
 
-.pt-2 {
+.pt-3 {
     padding-top: 100px;
 }
 
-.pt-3 {
+.pt-4 {
     padding-top: 50px;
+}
+
+.pt-5 {
+    padding-top: 30px;
+}
+
+.pt-6 {
+    padding-top: 20px;
+}
+
+.pb-1{
+    padding-bottom: 200px;
+}
+
+.pb-2{
+    padding-bottom: 150px;
+}
+
+.pb-3 {
+    padding-bottom: 100px;
+}
+
+.pb-4 {
+    padding-bottom: 50px;
+}
+
+.pb-5 {
+    padding-bottom: 30px;
+}
+
+.pb-6 {
+    padding-bottom: 20px;
 }
 
 .ps-1 {
@@ -104,7 +233,195 @@ body {
     padding-left: 20px;
 }
 
+.ps-3 {
+    padding-left: 50px;
+}
+
 
 .col-1 {
     width: 50%;
+}
+
+/* resposivel */
+
+
+
+@media (min-height: 770px) {
+    .pt-1{
+        padding-top: 300px;
+    }
+
+    .pt-2{
+        padding-top: 200px;
+    }
+
+    .text-1{
+        padding: 0;
+        margin: 0;
+        font-size: 7vh;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .text-2 {
+        padding: 0;
+        margin: 0;
+        font-size: 3vh;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+
+@media (min-height: 920px) {
+    .pt-1{
+        padding-top: 300px;
+    }
+    
+    .pt-2{
+        padding-top: 200px;
+    }
+}
+
+@media (min-height: 1000px) {
+    .pt-1{
+        padding-top: 400px;
+    }
+
+    .pt-2{
+        padding-top: 300px;
+    }
+}
+@media (max-width: 900px) {
+    .pt-1{
+        padding-top: 500px;
+    }
+    .containerAbout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+    .containerExperience {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+    .col-1 {
+        width: 70%;
+    }
+    
+    .myImage {
+        border-radius: 20px;
+        width: 450px;
+    }
+    
+    .text-3 {
+        padding: 0;
+        margin: 0;
+        font-size: 2.6vh;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .content-text {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 2vh;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+    .text-3 {
+        padding: 0;
+        margin: 0;
+        font-size: 3.2vh;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .content-text {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 2.5vh;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1350px){
+    .text-3 {
+        padding: 0;
+        margin: 0;
+        font-size: 3vh;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .content-text {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerAbout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+    .col-1 {
+        width: 90%;
+    }
+
+    .text-1{
+        padding: 0;
+        margin: 0;
+        font-size: 8vh;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .text-2 {
+        padding: 0;
+        margin: 0;
+        font-size: 3vh;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .text-3 {
+        padding: 0;
+        margin: 0;
+        font-size: 3vh;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .content-text {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 2vh;
+    }
+
+    .myImage {
+        border-radius: 20px;
+        width: 350px;
+    }
 }
